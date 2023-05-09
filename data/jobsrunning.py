@@ -15,6 +15,7 @@ class JobsRunning:
         self.master = master #setting self.master to master 
         master.title("Jobs Entered") #title of window
         self.config = config #setting self.config to config
+        master.resizable(0,0) #setting it unresizable.
 
         #from here on, it's just setting up the gui
         self.jobs_combo = Listbox(master, width=50, selectmode="multiple")
